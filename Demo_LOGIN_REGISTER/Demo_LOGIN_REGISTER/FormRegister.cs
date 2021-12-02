@@ -71,6 +71,7 @@ namespace Demo_LOGIN_REGISTER
                     users.UserName = textUserName.Text;
                     users.Email = textEmail.Text;
                     users.Password = Encrypt(textPassword.Text);
+                    
 
                     collection.InsertOne(users);
 
