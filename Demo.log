@@ -1,0 +1,6 @@
+2021-12-03 11:26:43,371 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - Successfully connection
+2021-12-03 11:55:10,825 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - user not found
+2021-12-03 11:56:04,591 [1] DEBUG Demo_LOGIN_REGISTER.FormRegister - Your Account has been Successffuly Created
+2021-12-03 11:56:30,865 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - Incorrect Password
+2021-12-03 11:56:36,437 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - Incorrect Password
+2021-12-03 11:56:44,909 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - Successfully connection

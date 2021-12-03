@@ -95,3 +95,6 @@ C:\Users\Lenovo\Source\Repos\Demo\Demo_LOGIN_REGISTER\Demo_LOGIN_REGISTER\obj\De
 C:\Users\Lenovo\Source\Repos\Demo\Demo_LOGIN_REGISTER\Demo_LOGIN_REGISTER\obj\Debug\Demo_LOGIN_REGISTER.exe
 C:\Users\Lenovo\Source\Repos\Demo\Demo_LOGIN_REGISTER\Demo_LOGIN_REGISTER\obj\Debug\Demo_LOGIN_REGISTER.pdb
 C:\Users\Lenovo\source\repos\Demo\Demo_LOGIN_REGISTER\Demo_LOGIN_REGISTER\obj\Debug\Demo_LOGIN_REGISTER.FormWelcome.resources
+C:\Users\Lenovo\source\repos\Demo\Demo_LOGIN_REGISTER\Demo_LOGIN_REGISTER\bin\Debug\Logger.config
+C:\Users\Lenovo\source\repos\Demo\Demo_LOGIN_REGISTER\Demo_LOGIN_REGISTER\bin\Debug\log4net.dll
+C:\Users\Lenovo\source\repos\Demo\Demo_LOGIN_REGISTER\Demo_LOGIN_REGISTER\bin\Debug\log4net.xml

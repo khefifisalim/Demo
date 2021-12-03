@@ -11,8 +11,11 @@ using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
 using System.Security.Cryptography;
-
-
+using System.Runtime.InteropServices;
+using log4net;
+using System.Reflection;
+using log4net.Config;
+using System.IO;
 
 namespace Demo_LOGIN_REGISTER
 {
@@ -20,9 +23,17 @@ namespace Demo_LOGIN_REGISTER
 
     public partial class FormRegister : Form
     {
+        private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
+
         public FormRegister()
         {
             InitializeComponent();
+            var logRepo = LogManager.GetRepository(Assembly.GetEntryAssembly());
+            XmlConfigurator.Configure(logRepo, new FileInfo("Logger.config"));
 
         }
 
@@ -56,8 +67,9 @@ namespace Demo_LOGIN_REGISTER
                 MongoClient mc = new MongoClient(connect1);
                 var db = mc.GetDatabase("Demo");
                 var collection = db.GetCollection<Users>("Users");
-                bool Server_Connected = db.RunCommandAsync((Command<BsonDocument>)"{ping:1}").Wait(100); // Check if Mongo Server connected or not
-                                                                                                         // MessageBox.Show(Server_Connected.ToString());
+                // Check if Mongo Server connected or not
+                bool Server_Connected = db.RunCommandAsync((Command<BsonDocument>)"{ping:1}").Wait(100); 
+                // MessageBox.Show(Server_Connected.ToString());
                 Users users = new Users();
 
 
@@ -65,6 +77,7 @@ namespace Demo_LOGIN_REGISTER
                 if (textUserName.Text == "" && textEmail.Text == "" && textPassword.Text == "" && textComPassword.Text == "")
                 {
                     MessageBox.Show("Please complete all fileds");
+                    log.Debug("Please complete all fileds");
                 }
                 // Check Password 
                 else if (textPassword.Text == textComPassword.Text)
@@ -77,6 +90,7 @@ namespace Demo_LOGIN_REGISTER
                     collection.InsertOne(users);
                     
                     MessageBox.Show("Your Account has been Successffuly Created ");
+                    log.Debug("Your Account has been Successffuly Created");
 
                     textUserName.Text = "";
                     textEmail.Text = "";
@@ -88,6 +102,7 @@ namespace Demo_LOGIN_REGISTER
                 else
                 {
                     MessageBox.Show("Your Password does not match");
+                    log.Debug("Your Password does not match");
                     textPassword.Text = "";
                     textComPassword.Text = "";
                 }
@@ -97,6 +112,7 @@ namespace Demo_LOGIN_REGISTER
             catch (Exception ex)
             {
                 MessageBox.Show("Failed To Connect" + ex.Message);
+                log.Debug("Failed To Connect" + ex.Message);
             }
 
 

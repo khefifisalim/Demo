@@ -11,15 +11,29 @@ using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
 using System.Security.Cryptography;
-
+using System.Runtime.InteropServices;
+using log4net;
+using System.Reflection;
+using System.IO;
+using log4net.Config;
 
 namespace Demo_LOGIN_REGISTER
 {
     public partial class FormLogin : Form
     {
+        private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
+
+
         public FormLogin()
         {
             InitializeComponent();
+
+            var logRepo = LogManager.GetRepository(Assembly.GetEntryAssembly());
+            XmlConfigurator.Configure(logRepo, new FileInfo("Logger.config"));
         }
      
         static string Encrypt(string value)
@@ -65,6 +79,7 @@ namespace Demo_LOGIN_REGISTER
                         if (Encrypt(textPassword.Text) == data.Password)
                         {
                             MessageBox.Show("Successfully connection");
+                            log.Debug("Successfully connection");
 
                             new FormWelcome().Show();
                             this.Hide();
@@ -72,6 +87,7 @@ namespace Demo_LOGIN_REGISTER
                         else
                         {
                             MessageBox.Show("Incorrect Password");
+                            log.Debug("Incorrect Password");
 
                         }
                     }
@@ -80,12 +96,14 @@ namespace Demo_LOGIN_REGISTER
                 if (!user)
                 {
                     MessageBox.Show("user not found");
+                    log.Debug("user not found");
                 }
 
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Invalid: " + ex.Message);
+                log.Debug("Invalid: " + ex.Message);
             }
         }
 
