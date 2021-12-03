@@ -144,5 +144,15 @@ namespace Demo_LOGIN_REGISTER
                 btn_Login_Click(this, e);
             }
         }
+
+        private void iconPictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();   
+        }
+
+        private void iconPictureBox2_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }

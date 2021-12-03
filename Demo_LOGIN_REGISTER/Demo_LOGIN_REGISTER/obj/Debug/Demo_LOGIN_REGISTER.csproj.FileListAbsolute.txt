@@ -98,3 +98,4 @@ C:\Users\Lenovo\source\repos\Demo\Demo_LOGIN_REGISTER\Demo_LOGIN_REGISTER\obj\De
 C:\Users\Lenovo\source\repos\Demo\Demo_LOGIN_REGISTER\Demo_LOGIN_REGISTER\bin\Debug\Logger.config
 C:\Users\Lenovo\source\repos\Demo\Demo_LOGIN_REGISTER\Demo_LOGIN_REGISTER\bin\Debug\log4net.dll
 C:\Users\Lenovo\source\repos\Demo\Demo_LOGIN_REGISTER\Demo_LOGIN_REGISTER\bin\Debug\log4net.xml
+C:\Users\Lenovo\source\repos\Demo\Demo_LOGIN_REGISTER\Demo_LOGIN_REGISTER\bin\Debug\FontAwesome.Sharp.dll
