@@ -49,7 +49,7 @@ namespace Demo_LOGIN_REGISTER
             this.lbl_Register.Location = new System.Drawing.Point(92, 404);
             this.lbl_Register.Name = "lbl_Register";
             this.lbl_Register.Size = new System.Drawing.Size(101, 17);
-            this.lbl_Register.TabIndex = 20;
+            this.lbl_Register.TabIndex = 9;
             this.lbl_Register.Text = "Create Account";
             this.lbl_Register.Click += new System.EventHandler(this.lbl_Register_Click);
             // 
@@ -59,7 +59,7 @@ namespace Demo_LOGIN_REGISTER
             this.lbl_Account.Location = new System.Drawing.Point(62, 373);
             this.lbl_Account.Name = "lbl_Account";
             this.lbl_Account.Size = new System.Drawing.Size(147, 17);
-            this.lbl_Account.TabIndex = 21;
+            this.lbl_Account.TabIndex = 8;
             this.lbl_Account.Text = "Dont Have an Account";
             this.lbl_Account.Click += new System.EventHandler(this.lbl_Account_Click);
             // 
@@ -72,7 +72,7 @@ namespace Demo_LOGIN_REGISTER
             this.btn_Clear.Location = new System.Drawing.Point(39, 319);
             this.btn_Clear.Name = "btn_Clear";
             this.btn_Clear.Size = new System.Drawing.Size(216, 35);
-            this.btn_Clear.TabIndex = 18;
+            this.btn_Clear.TabIndex = 7;
             this.btn_Clear.Text = "CLEAR";
             this.btn_Clear.UseVisualStyleBackColor = false;
             this.btn_Clear.Click += new System.EventHandler(this.btn_Clear_Click);
@@ -87,7 +87,7 @@ namespace Demo_LOGIN_REGISTER
             this.btn_Login.Location = new System.Drawing.Point(39, 252);
             this.btn_Login.Name = "btn_Login";
             this.btn_Login.Size = new System.Drawing.Size(216, 35);
-            this.btn_Login.TabIndex = 19;
+            this.btn_Login.TabIndex = 6;
             this.btn_Login.Text = "LOGIN";
             this.btn_Login.UseVisualStyleBackColor = false;
             this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
@@ -100,7 +100,7 @@ namespace Demo_LOGIN_REGISTER
             this.checkBoxShowPass.Location = new System.Drawing.Point(123, 197);
             this.checkBoxShowPass.Name = "checkBoxShowPass";
             this.checkBoxShowPass.Size = new System.Drawing.Size(119, 21);
-            this.checkBoxShowPass.TabIndex = 17;
+            this.checkBoxShowPass.TabIndex = 5;
             this.checkBoxShowPass.Text = "Show Password";
             this.checkBoxShowPass.UseVisualStyleBackColor = true;
             this.checkBoxShowPass.CheckedChanged += new System.EventHandler(this.checkBoxShowPass_CheckedChanged);
@@ -115,7 +115,8 @@ namespace Demo_LOGIN_REGISTER
             this.textPassword.Name = "textPassword";
             this.textPassword.PasswordChar = '•';
             this.textPassword.Size = new System.Drawing.Size(216, 28);
-            this.textPassword.TabIndex = 15;
+            this.textPassword.TabIndex = 4;
+            this.textPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textPassword_KeyDown);
             // 
             // label4
             // 
@@ -123,7 +124,7 @@ namespace Demo_LOGIN_REGISTER
             this.label4.Location = new System.Drawing.Point(36, 143);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(66, 17);
-            this.label4.TabIndex = 12;
+            this.label4.TabIndex = 3;
             this.label4.Text = "Password";
             // 
             // textUserName
@@ -135,7 +136,7 @@ namespace Demo_LOGIN_REGISTER
             this.textUserName.Multiline = true;
             this.textUserName.Name = "textUserName";
             this.textUserName.Size = new System.Drawing.Size(216, 28);
-            this.textUserName.TabIndex = 10;
+            this.textUserName.TabIndex = 2;
             // 
             // label2
             // 
@@ -143,7 +144,7 @@ namespace Demo_LOGIN_REGISTER
             this.label2.Location = new System.Drawing.Point(36, 80);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 17);
-            this.label2.TabIndex = 9;
+            this.label2.TabIndex = 1;
             this.label2.Text = "UserName";
             // 
             // label1
@@ -154,7 +155,7 @@ namespace Demo_LOGIN_REGISTER
             this.label1.Location = new System.Drawing.Point(34, 38);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(155, 27);
-            this.label1.TabIndex = 8;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Get Started";
             // 
             // FormLogin

@@ -94,3 +94,4 @@ C:\Users\Lenovo\Source\Repos\Demo\Demo_LOGIN_REGISTER\Demo_LOGIN_REGISTER\obj\De
 C:\Users\Lenovo\Source\Repos\Demo\Demo_LOGIN_REGISTER\Demo_LOGIN_REGISTER\obj\Debug\Demo_LOGIN_REGISTER.csproj.CopyComplete
 C:\Users\Lenovo\Source\Repos\Demo\Demo_LOGIN_REGISTER\Demo_LOGIN_REGISTER\obj\Debug\Demo_LOGIN_REGISTER.exe
 C:\Users\Lenovo\Source\Repos\Demo\Demo_LOGIN_REGISTER\Demo_LOGIN_REGISTER\obj\Debug\Demo_LOGIN_REGISTER.pdb
+C:\Users\Lenovo\source\repos\Demo\Demo_LOGIN_REGISTER\Demo_LOGIN_REGISTER\obj\Debug\Demo_LOGIN_REGISTER.FormWelcome.resources

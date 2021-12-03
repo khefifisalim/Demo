@@ -23,11 +23,12 @@ namespace Demo_LOGIN_REGISTER
         public FormRegister()
         {
             InitializeComponent();
-            
+
         }
+
         static string Encrypt(string value)
         {
-            using (MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider() )
+            using (MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider())
             {
                 UTF8Encoding utf8 = new UTF8Encoding();
                 //Hash data
@@ -48,6 +49,7 @@ namespace Demo_LOGIN_REGISTER
         private void btn_Register_Click(object sender, EventArgs e)
         {
             try
+
             {
                 // Connection & Creation Database with mongodb 
                 const string connect1 = "mongodb://localhost:27017";
@@ -55,32 +57,33 @@ namespace Demo_LOGIN_REGISTER
                 var db = mc.GetDatabase("Demo");
                 var collection = db.GetCollection<Users>("Users");
                 bool Server_Connected = db.RunCommandAsync((Command<BsonDocument>)"{ping:1}").Wait(100); // Check if Mongo Server connected or not
-                MessageBox.Show(Server_Connected.ToString());
+                                                                                                         // MessageBox.Show(Server_Connected.ToString());
                 Users users = new Users();
 
 
                 // Check fileds Not Null 
                 if (textUserName.Text == "" && textEmail.Text == "" && textPassword.Text == "" && textComPassword.Text == "")
                 {
-                    MessageBox.Show("Please complite all fileds");
+                    MessageBox.Show("Please complete all fileds");
                 }
                 // Check Password 
                 else if (textPassword.Text == textComPassword.Text)
-                {   
+                {
                     users.Id = Guid.NewGuid();
                     users.UserName = textUserName.Text;
                     users.Email = textEmail.Text;
                     users.Password = Encrypt(textPassword.Text);
                     
-
                     collection.InsertOne(users);
-
+                    
                     MessageBox.Show("Your Account has been Successffuly Created ");
 
                     textUserName.Text = "";
                     textEmail.Text = "";
                     textPassword.Text = "";
                     textComPassword.Text = "";
+
+
                 }
                 else
                 {
@@ -95,8 +98,9 @@ namespace Demo_LOGIN_REGISTER
             {
                 MessageBox.Show("Failed To Connect" + ex.Message);
             }
-        
-    }
+
+
+        }
 
         private void btn_Clear_Click(object sender, EventArgs e)
         {
@@ -131,5 +135,13 @@ namespace Demo_LOGIN_REGISTER
             new FormLogin().Show();
             this.Hide();
         }
-    }
+
+        private void textComPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btn_Register_Click(this, e);
+            }
+        }
+    }  
 }

@@ -65,6 +65,9 @@ namespace Demo_LOGIN_REGISTER
                         if (Encrypt(textPassword.Text) == data.Password)
                         {
                             MessageBox.Show("Successfully connection");
+
+                            new FormWelcome().Show();
+                            this.Hide();
                         }
                         else
                         {
@@ -114,6 +117,14 @@ namespace Demo_LOGIN_REGISTER
         {
             new FormRegister().Show();
             this.Hide();
+        }
+
+        private void textPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btn_Login_Click(this, e);
+            }
         }
     }
 }

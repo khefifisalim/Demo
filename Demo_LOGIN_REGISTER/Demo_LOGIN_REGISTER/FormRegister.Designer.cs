@@ -102,7 +102,7 @@ namespace Demo_LOGIN_REGISTER
             this.label4.Location = new System.Drawing.Point(33, 211);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(66, 17);
-            this.label4.TabIndex = 3;
+            this.label4.TabIndex = 5;
             this.label4.Text = "Password";
             // 
             // textPassword
@@ -115,7 +115,7 @@ namespace Demo_LOGIN_REGISTER
             this.textPassword.Name = "textPassword";
             this.textPassword.PasswordChar = '•';
             this.textPassword.Size = new System.Drawing.Size(216, 28);
-            this.textPassword.TabIndex = 4;
+            this.textPassword.TabIndex = 6;
             // 
             // label5
             // 
@@ -123,7 +123,7 @@ namespace Demo_LOGIN_REGISTER
             this.label5.Location = new System.Drawing.Point(33, 272);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(120, 17);
-            this.label5.TabIndex = 3;
+            this.label5.TabIndex = 7;
             this.label5.Text = "Confirm Password";
             // 
             // textComPassword
@@ -136,7 +136,8 @@ namespace Demo_LOGIN_REGISTER
             this.textComPassword.Name = "textComPassword";
             this.textComPassword.PasswordChar = '•';
             this.textComPassword.Size = new System.Drawing.Size(216, 28);
-            this.textComPassword.TabIndex = 4;
+            this.textComPassword.TabIndex = 8;
+            this.textComPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textComPassword_KeyDown);
             // 
             // checkBoxShowPass
             // 
@@ -146,7 +147,7 @@ namespace Demo_LOGIN_REGISTER
             this.checkBoxShowPass.Location = new System.Drawing.Point(121, 326);
             this.checkBoxShowPass.Name = "checkBoxShowPass";
             this.checkBoxShowPass.Size = new System.Drawing.Size(119, 21);
-            this.checkBoxShowPass.TabIndex = 5;
+            this.checkBoxShowPass.TabIndex = 9;
             this.checkBoxShowPass.Text = "Show Password";
             this.checkBoxShowPass.UseVisualStyleBackColor = true;
             this.checkBoxShowPass.CheckedChanged += new System.EventHandler(this.checkBoxShowPass_CheckedChanged);
@@ -161,7 +162,7 @@ namespace Demo_LOGIN_REGISTER
             this.btn_Register.Location = new System.Drawing.Point(36, 353);
             this.btn_Register.Name = "btn_Register";
             this.btn_Register.Size = new System.Drawing.Size(216, 35);
-            this.btn_Register.TabIndex = 6;
+            this.btn_Register.TabIndex = 10;
             this.btn_Register.Text = "REGISTER";
             this.btn_Register.UseVisualStyleBackColor = false;
             this.btn_Register.Click += new System.EventHandler(this.btn_Register_Click);
@@ -175,7 +176,7 @@ namespace Demo_LOGIN_REGISTER
             this.btn_Clear.Location = new System.Drawing.Point(36, 403);
             this.btn_Clear.Name = "btn_Clear";
             this.btn_Clear.Size = new System.Drawing.Size(216, 35);
-            this.btn_Clear.TabIndex = 6;
+            this.btn_Clear.TabIndex = 11;
             this.btn_Clear.Text = "CLEAR";
             this.btn_Clear.UseVisualStyleBackColor = false;
             this.btn_Clear.Click += new System.EventHandler(this.btn_Clear_Click);
@@ -186,7 +187,7 @@ namespace Demo_LOGIN_REGISTER
             this.lbl_Account.Location = new System.Drawing.Point(60, 452);
             this.lbl_Account.Name = "lbl_Account";
             this.lbl_Account.Size = new System.Drawing.Size(163, 17);
-            this.lbl_Account.TabIndex = 7;
+            this.lbl_Account.TabIndex = 12;
             this.lbl_Account.Text = "Already Have an Account";
             this.lbl_Account.Click += new System.EventHandler(this.lbl_Account_Click);
             // 
@@ -198,7 +199,7 @@ namespace Demo_LOGIN_REGISTER
             this.lbl_LOGIN.Location = new System.Drawing.Point(89, 483);
             this.lbl_LOGIN.Name = "lbl_LOGIN";
             this.lbl_LOGIN.Size = new System.Drawing.Size(97, 17);
-            this.lbl_LOGIN.TabIndex = 7;
+            this.lbl_LOGIN.TabIndex = 13;
             this.lbl_LOGIN.Text = "Back to LOGIN";
             this.lbl_LOGIN.Click += new System.EventHandler(this.lbl_LOGIN_Click);
             // 
