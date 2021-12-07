@@ -19,10 +19,7 @@ namespace Demo_LOGIN_REGISTER
 {
     public partial class FormSendMail : Form
     {
-        NetworkCredential login;
-        SmtpClient client;
-        MailMessage msg;
-
+      
         private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
