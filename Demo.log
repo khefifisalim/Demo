@@ -4,3 +4,62 @@
 2021-12-03 11:56:30,865 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - Incorrect Password
 2021-12-03 11:56:36,437 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - Incorrect Password
 2021-12-03 11:56:44,909 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - Successfully connection
+2021-12-06 11:35:16,600 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - Successfully connection
+2021-12-06 11:43:28,081 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - Successfully connection
+2021-12-06 11:44:19,281 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - Successfully connection
+2021-12-06 11:46:03,035 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - Successfully connection
+2021-12-06 11:46:34,442 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - Successfully connection
+2021-12-06 12:17:05,214 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - Successfully connection
+2021-12-06 13:04:49,974 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - Successfully connection
+2021-12-06 13:12:14,610 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - Successfully connection
+2021-12-06 13:23:47,427 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - Successfully connection
+2021-12-06 15:03:09,925 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - Successfully connection
+2021-12-06 15:10:38,643 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - Successfully connection
+2021-12-06 15:11:29,048 [1] DEBUG Demo_LOGIN_REGISTER.FormSendMail - Sendig... System.Net.Mail.SmtpException: Le serveur SMTP requiert une connexion sécurisée ou le client n'était pas authentifié. La réponse du serveur était : 5.7.0 Authentication Required. Learn more at
+   à System.Net.Mail.SendMailAsyncResult.End(IAsyncResult result)
+   à System.Net.Mail.SmtpClient.SendMailCallback(IAsyncResult result)
+2021-12-06 15:15:05,053 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - Successfully connection
+2021-12-06 15:17:51,772 [1] DEBUG Demo_LOGIN_REGISTER.FormSendMail - Sendig... System.Net.Mail.SmtpException: Le serveur SMTP requiert une connexion sécurisée ou le client n'était pas authentifié. La réponse du serveur était : 5.7.0 Authentication Required. Learn more at
+   à System.Net.Mail.SendMailAsyncResult.End(IAsyncResult result)
+   à System.Net.Mail.SmtpClient.SendMailCallback(IAsyncResult result)
+2021-12-06 15:26:30,140 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - Successfully connection
+2021-12-06 15:39:45,029 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - Successfully connection
+2021-12-06 15:51:18,034 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - Successfully connection
+2021-12-06 15:53:02,400 [1] DEBUG Demo_LOGIN_REGISTER.FormSendMail - Sendig... System.Net.Mail.SmtpException: Le serveur SMTP requiert une connexion sécurisée ou le client n'était pas authentifié. La réponse du serveur était : 5.7.0 Authentication Required. Learn more at
+   à System.Net.Mail.SendMailAsyncResult.End(IAsyncResult result)
+   à System.Net.Mail.SmtpClient.SendMailCallback(IAsyncResult result)
+2021-12-06 16:03:23,222 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - Successfully connection
+2021-12-07 10:02:31,669 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - Successfully connection
+2021-12-07 10:08:38,258 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - Successfully connection
+2021-12-07 10:09:37,785 [1] DEBUG Demo_LOGIN_REGISTER.FormSendMail - Sendig... System.Net.Mail.SmtpException: Le serveur SMTP requiert une connexion sécurisée ou le client n'était pas authentifié. La réponse du serveur était : 5.7.0 Authentication Required. Learn more at
+   à System.Net.Mail.SendMailAsyncResult.End(IAsyncResult result)
+   à System.Net.Mail.SmtpClient.SendMailCallback(IAsyncResult result)
+2021-12-07 10:13:34,795 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - Successfully connection
+2021-12-07 10:37:06,794 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - Successfully connection
+2021-12-07 10:38:14,969 [1] DEBUG Demo_LOGIN_REGISTER.FormSendMail - Sendig... System.Net.Mail.SmtpException: Le serveur SMTP requiert une connexion sécurisée ou le client n'était pas authentifié. La réponse du serveur était : 5.7.0 Authentication Required. Learn more at
+   à System.Net.Mail.SendMailAsyncResult.End(IAsyncResult result)
+   à System.Net.Mail.SmtpClient.SendMailCallback(IAsyncResult result)
+2021-12-07 10:39:54,613 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - Successfully connection
+2021-12-07 10:40:51,377 [1] DEBUG Demo_LOGIN_REGISTER.FormSendMail - Sendig... System.Net.Mail.SmtpException: Le serveur SMTP requiert une connexion sécurisée ou le client n'était pas authentifié. La réponse du serveur était : 5.7.0 Authentication Required. Learn more at
+   à System.Net.Mail.SendMailAsyncResult.End(IAsyncResult result)
+   à System.Net.Mail.SmtpClient.SendMailCallback(IAsyncResult result)
+2021-12-07 10:46:26,892 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - Successfully connection
+2021-12-07 11:06:48,180 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - Successfully connection
+2021-12-07 11:06:57,453 [1] ERROR Demo_LOGIN_REGISTER.FormSendMail - Le serveur SMTP requiert une connexion sécurisée ou le client n'était pas authentifié. La réponse du serveur était : 5.7.0 Authentication Required. Learn more at
+2021-12-07 11:07:08,263 [1] ERROR Demo_LOGIN_REGISTER.FormSendMail - Le serveur SMTP requiert une connexion sécurisée ou le client n'était pas authentifié. La réponse du serveur était : 5.7.0 Authentication Required. Learn more at
+2021-12-07 11:11:59,976 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - Successfully connection
+2021-12-07 11:12:02,710 [1] ERROR Demo_LOGIN_REGISTER.FormSendMail - Le serveur SMTP requiert une connexion sécurisée ou le client n'était pas authentifié. La réponse du serveur était : 5.7.0 Authentication Required. Learn more at
+2021-12-07 11:14:32,261 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - Successfully connection
+2021-12-07 11:17:57,829 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - Successfully connection
+2021-12-07 11:19:11,035 [1] DEBUG Demo_LOGIN_REGISTER.FormSendMail - Sendig... System.Net.Mail.SmtpException: Le serveur SMTP requiert une connexion sécurisée ou le client n'était pas authentifié. La réponse du serveur était : 5.7.0 Authentication Required. Learn more at
+   à System.Net.Mail.SendMailAsyncResult.End(IAsyncResult result)
+   à System.Net.Mail.SmtpClient.SendMailCallback(IAsyncResult result)
+2021-12-07 11:21:51,791 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - Successfully connection
+2021-12-07 11:25:00,615 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - Successfully connection
+2021-12-07 11:26:17,428 [1] DEBUG Demo_LOGIN_REGISTER.FormSendMail - Sendig... System.Net.Mail.SmtpException: Le serveur SMTP requiert une connexion sécurisée ou le client n'était pas authentifié. La réponse du serveur était : 5.7.0 Authentication Required. Learn more at
+   à System.Net.Mail.SendMailAsyncResult.End(IAsyncResult result)
+   à System.Net.Mail.SmtpClient.SendMailCallback(IAsyncResult result)
+2021-12-07 11:33:56,092 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - Successfully connection
+2021-12-07 11:35:48,462 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - Successfully connection
+2021-12-07 11:48:49,991 [1] DEBUG Demo_LOGIN_REGISTER.FormLogin - Successfully connection
+2021-12-07 11:49:31,210 [1] DEBUG Demo_LOGIN_REGISTER.FormSendMail - Successfully send email

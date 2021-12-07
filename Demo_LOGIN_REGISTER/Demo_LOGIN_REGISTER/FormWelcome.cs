@@ -16,5 +16,11 @@ namespace Demo_LOGIN_REGISTER
         {
             InitializeComponent();
         }
+
+        private void btn_SendMail_Click(object sender, EventArgs e)
+        {
+            new FormSendMail().Show();
+            this.Hide();
+        }
     }
 }
